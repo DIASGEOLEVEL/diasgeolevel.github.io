@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adjustmentmaster.github.io/sitemap.xml
+Sitemap: https://diasgeolevel.github.io/sitemap.xml
