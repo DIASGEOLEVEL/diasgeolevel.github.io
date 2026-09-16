@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 
-<meta name="google-site-verification" content="zBjlTzDmIj3tzANpU91ex0G-7R6jdE8uL72IKTba7bw" />
+<meta name="google-site-verification" content="zBjlTzDmIj3tzANpU91ex0G-7R6jdE8uL72IKTba7bw">
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>DIAS GEO LEVEL, центр по ремонту нивелиров</title>
 
@@ -15,10 +15,12 @@
 
 body{
   margin:0;
-  font-family:Segoe UI,Arial;
+  font-family:Segoe UI,Arial,sans-serif;
   background:#0b2d63;
   color:#fff;
 }
+
+/* Верхняя контактная панель */
 
 .top{
   background:#08224d;
@@ -38,6 +40,9 @@ body{
   text-decoration:underline;
 }
 
+
+/* Основная часть */
+
 .container{
   max-width:1100px;
   margin:auto;
@@ -45,52 +50,63 @@ body{
   text-align:center;
 }
 
+
+/* Заголовок */
+
 h1{
   font-size:56px;
-  margin:0 0 40px;
+  margin:0 0 45px;
 }
 
-h2{
-  line-height:1.5;
-}
 
-p{
-  line-height:1.6;
-}
-
-/* ФОТОГРАФИИ */
+/* Фотографии оборудования */
 
 .equipment{
   display:flex;
   justify-content:center;
-  gap:24px;
-  width:100%;
+  align-items:flex-start;
+  gap:25px;
   margin:0 auto 45px;
+  max-width:900px;
 }
 
 .equipment-item{
-  flex:1;
-  max-width:340px;
-  text-align:center;
+  width:250px;
+  flex:0 0 250px;
 }
 
 .equipment-item img{
   display:block;
   width:100%;
   height:auto;
-  aspect-ratio:1 / 1;
-  object-fit:contain;
-  background:#0b2d63;
   border-radius:14px;
   box-shadow:0 4px 12px rgba(0,0,0,.25);
+  transition:.25s;
+}
+
+.equipment-item img:hover{
+  transform:scale(1.04);
 }
 
 .equipment-item h3{
-  margin:14px 0 0;
-  font-size:26px;
+  margin:12px 0 0;
+  font-size:24px;
 }
 
-/* КНОПКИ */
+
+/* Основной текст */
+
+h2{
+  line-height:1.5;
+  margin-top:10px;
+}
+
+p{
+  line-height:1.6;
+}
+
+
+/* Кнопки */
 
 .btn{
   display:inline-block;
@@ -116,7 +132,8 @@ p{
   color:#fff;
 }
 
-/* БЕЛЫЙ БЛОК */
+
+/* Белая информационная карточка */
 
 .card{
   background:#fff;
@@ -128,7 +145,8 @@ p{
   text-align:left;
 }
 
-/* СОЦИАЛЬНЫЕ СЕТИ */
+
+/* Социальные сети */
 
 .socials{
   text-align:center;
@@ -192,35 +210,50 @@ p{
   background:#ff0000;
 }
 
-/* ТЕЛЕФОН */
+
+/* Нижняя часть */
+
+footer{
+  background:#08224d;
+  padding:20px;
+  text-align:center;
+}
+
+
+/* Телефон */
 
 @media(max-width:700px){
 
   h1{
     font-size:40px;
+    margin-bottom:30px;
   }
 
   .equipment{
     flex-direction:column;
     align-items:center;
+    gap:30px;
   }
 
   .equipment-item{
-    width:100%;
-    max-width:360px;
+    width:250px;
+    flex:0 0 auto;
   }
 
-  .equipment-item img{
-    width:100%;
-    height:auto;
+  h2{
+    font-size:22px;
   }
 
 }
 
 </style>
+
 </head>
 
 <body>
+
+
+<!-- КОНТАКТЫ -->
 
 <div class="top">
 
@@ -241,21 +274,24 @@ diasgeolevel@gmail.com
 </div>
 
 
+<!-- ОСНОВНАЯ ЧАСТЬ -->
+
 <div class="container">
+
 
 <h1>DIAS GEO LEVEL</h1>
 
 
-<!-- ФОТОГРАФИИ ТРИМБЛ / ЛАЙКА / BOSCH -->
+<!-- ФОТОГРАФИИ -->
 
 <div class="equipment">
+
 
   <div class="equipment-item">
 
     <img
       src="images/Trimble_AL28A_Square02.jpg"
-      alt="Trimble AL28A"
-    >
+      alt="Trimble AL28A">
 
     <h3>Trimble</h3>
 
@@ -266,8 +302,7 @@ diasgeolevel@gmail.com
 
     <img
       src="images/Leica_NA720_Square02.jpg"
-      alt="Leica NA720"
-    >
+      alt="Leica NA720">
 
     <h3>Leica</h3>
 
@@ -278,15 +313,17 @@ diasgeolevel@gmail.com
 
     <img
       src="images/BOSCH_GOL_32D_Square02.jpg"
-      alt="Bosch GOL 32D"
-    >
+      alt="Bosch GOL 32D">
 
     <h3>Bosch</h3>
 
   </div>
 
+
 </div>
 
+
+<!-- УСЛУГИ -->
 
 <h2>
 Поверка нивелиров • Калибровка нивелиров • Юстировка нивелиров • Настройка нивелиров • Ремонт нивелиров в Астане
@@ -298,10 +335,11 @@ diasgeolevel@gmail.com
 </p>
 
 
+<!-- КНОПКИ -->
+
 <a
   class="btn call"
-  href="tel:+77073353693"
->
+  href="tel:+77073353693">
 📞 Позвонить
 </a>
 
@@ -310,8 +348,7 @@ diasgeolevel@gmail.com
   class="btn wa"
   href="https://wa.me/77073353693"
   target="_blank"
-  rel="noopener"
->
+  rel="noopener">
 WhatsApp
 </a>
 
@@ -320,11 +357,12 @@ WhatsApp
   class="btn map"
   href="https://2gis.kz/astana/firm/70000001111395267"
   target="_blank"
-  rel="noopener"
->
+  rel="noopener">
 📍 2ГИС
 </a>
 
+
+<!-- ИНФОРМАЦИЯ -->
 
 <div class="card">
 
@@ -356,7 +394,13 @@ WhatsApp
 
 <p>
 
-Leica NA320 • Leica NA324 • Leica NA332 • Leica NA520 • Leica NA524 • Leica NA532 • Leica NA720 • Leica NA724 • Leica NA728 • Leica NA730 • Leica NA730 Plus • Topcon • Trimble • Sokkia • Nikon • Bosch • CONDTROL • SETL • CROWN • Spectra Precision • SOUTH • Геокурс • УОМЗ • RGK • Зубр и другие.
+Leica NA320 • Leica NA324 • Leica NA332 •
+Leica NA520 • Leica NA524 • Leica NA532 •
+Leica NA720 • Leica NA724 • Leica NA728 •
+Leica NA730 • Leica NA730 Plus •
+Topcon • Trimble • Sokkia • Nikon • Bosch •
+CONDTROL • SETL • CROWN • Spectra Precision •
+SOUTH • Геокурс • УОМЗ • RGK • Зубр и другие.
 
 </p>
 
@@ -365,9 +409,12 @@ Leica NA320 • Leica NA324 • Leica NA332 • Leica NA520 • Leica NA524 • 
 </div>
 
 
+<!-- СОЦИАЛЬНЫЕ СЕТИ -->
+
 <section class="socials">
 
 <h2>Мы в социальных сетях</h2>
+
 
 <div class="social-links">
 
@@ -377,8 +424,7 @@ Leica NA320 • Leica NA324 • Leica NA332 • Leica NA520 • Leica NA524 • 
   target="_blank"
   rel="noopener"
   class="pinterest"
-  aria-label="Pinterest"
->
+  aria-label="Pinterest">
 📌
 </a>
 
@@ -388,8 +434,7 @@ Leica NA320 • Leica NA324 • Leica NA332 • Leica NA520 • Leica NA524 • 
   target="_blank"
   rel="noopener"
   class="linkedin"
-  aria-label="LinkedIn"
->
+  aria-label="LinkedIn">
 in
 </a>
 
@@ -399,8 +444,7 @@ in
   target="_blank"
   rel="noopener"
   class="instagram"
-  aria-label="Instagram"
->
+  aria-label="Instagram">
 📷
 </a>
 
@@ -410,8 +454,7 @@ in
   target="_blank"
   rel="noopener"
   class="x"
-  aria-label="X"
->
+  aria-label="X">
 𝕏
 </a>
 
@@ -421,8 +464,7 @@ in
   target="_blank"
   rel="noopener"
   class="facebook"
-  aria-label="Facebook"
->
+  aria-label="Facebook">
 f
 </a>
 
@@ -432,8 +474,7 @@ f
   target="_blank"
   rel="noopener"
   class="youtube"
-  aria-label="YouTube"
->
+  aria-label="YouTube">
 ▶
 </a>
 
