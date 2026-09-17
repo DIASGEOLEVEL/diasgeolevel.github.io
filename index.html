@@ -1,162 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
 
 <meta name="google-site-verification" content="zBjlTzDmIj3tzANpU91ex0G-7R6jdE8uL72IKTba7bw">
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Ремонт и поверка нивелиров в Астане | DIAS GEO LEVEL</title>
 
 <meta name="description" content="Ремонт, поверка, калибровка и юстировка оптических и лазерных нивелиров в Астане. Ремонт Leica, Trimble, Sokkia, Topcon, Bosch, Nikon и других нивелиров. DIAS GEO LEVEL.">
 
-<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="icon" type="image/png" href="/favicon.png?v=2">
 
 <style>
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
 
 body{
   margin:0;
   font-family:Segoe UI,Arial,sans-serif;
   background:#0b2d63;
-  color:white;
+  color:#fff;
 }
 
-/* ВЕРХНЯЯ СТРОКА */
+/* Верхняя контактная панель */
+
 .top{
   background:#08224d;
-  min-height:58px;
-  padding:14px 20px;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:25px;
-
-  font-size:16px;
-  font-weight:600;
-
-  white-space:nowrap;
+  padding:18px;
+  text-align:center;
+  font-size:22px;
+  font-weight:700;
+  line-height:1.8;
 }
 
-.top span,
 .top a{
-  color:white;
+  color:#fff;
   text-decoration:none;
 }
 
-/* ГЛАВНАЯ */
-.hero{
-  position:relative;
-  overflow:hidden;
+.top a:hover{
+  text-decoration:underline;
+}
 
-  background:#174b87;
-  padding:55px 20px 0;
+
+/* Основная часть */
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
   text-align:center;
 }
 
-/* Небо */
-.sky{
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  height:390px;
 
-  background:#174b87;
-  z-index:0;
-}
-
-/* СИЛУЭТ АСТАНЫ */
-.skyline{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  height:220px;
-
-  background:#0b2d63;
-  z-index:1;
-
-  clip-path:polygon(
-    0 83%,
-    2% 83%,2% 70%,4% 70%,4% 80%,
-    6% 80%,6% 55%,8% 55%,8% 82%,
-    10% 82%,10% 48%,12% 48%,12% 78%,
-    14% 78%,14% 62%,16% 62%,16% 80%,
-    18% 80%,18% 52%,20% 52%,20% 76%,
-    22% 76%,22% 43%,24% 43%,24% 79%,
-    26% 79%,26% 58%,28% 58%,28% 80%,
-
-    /* Ак Орда — цельный силуэт без окон */
-    30% 80%,30% 61%,32% 61%,32% 48%,
-    33% 40%,34% 48%,35% 61%,35% 80%,
-
-    37% 80%,37% 54%,39% 54%,39% 72%,
-    41% 72%,41% 46%,43% 46%,43% 80%,
-
-    45% 80%,45% 55%,47% 55%,47% 35%,
-    48% 35%,48% 55%,50% 55%,50% 80%,
-
-    52% 80%,52% 48%,54% 48%,54% 68%,
-    56% 68%,56% 53%,58% 53%,58% 80%,
-
-    60% 80%,60% 45%,62% 45%,62% 72%,
-    64% 72%,64% 38%,66% 38%,66% 80%,
-
-    /* Байтерек */
-    68% 80%,68% 66%,69% 66%,70% 32%,
-    71% 66%,72% 66%,72% 80%,
-
-    74% 80%,74% 50%,76% 50%,76% 75%,
-    78% 75%,78% 45%,80% 45%,80% 80%,
-
-    82% 80%,82% 57%,84% 57%,84% 76%,
-    86% 76%,86% 48%,88% 48%,88% 80%,
-
-    90% 80%,90% 60%,92% 60%,92% 75%,
-    94% 75%,94% 52%,96% 52%,96% 80%,
-    100% 80%,100% 100%,0 100%
-  );
-}
-
-/* СОДЕРЖИМОЕ HERO */
-.hero-content{
-  position:relative;
-  z-index:3;
-  max-width:1100px;
-  margin:auto;
-}
+/* Заголовок */
 
 h1{
-  margin:0;
   font-size:56px;
-  line-height:1.05;
-  color:white;
-  letter-spacing:1px;
+  margin:0 0 45px;
 }
 
-.subtitle{
-  margin:12px 0 165px;
-  font-size:28px;
-  font-weight:700;
-  color:white;
-}
 
-/* ОБОРУДОВАНИЕ */
+/* Фотографии оборудования */
+
 .equipment{
   display:flex;
   justify-content:center;
   align-items:flex-start;
   gap:15px;
-  margin-bottom:20px;
+  margin:0 auto 35px;
+  max-width:500px;
 }
 
 .equipment-item{
@@ -166,221 +79,197 @@ h1{
 
 .equipment-item img{
   display:block;
-  width:125px;
-  height:125px;
-  object-fit:cover;
+  width:100%;
+  height:auto;
   border-radius:10px;
-  border:2px solid rgba(255,255,255,.15);
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+  transition:.25s;
 }
 
-.equipment-item div{
-  margin-top:7px;
-  font-size:18px;
-  font-weight:700;
+.equipment-item img:hover{
+  transform:scale(1.04);
 }
 
-/* УСЛУГИ */
-.services{
-  max-width:950px;
-  margin:20px auto 0;
-  font-size:21px;
-  font-weight:700;
-  line-height:1.55;
+.equipment-item h3{
+  margin:8px 0 0;
+  font-size:16px;
 }
 
-.certificate{
-  margin:14px 0 20px;
-  font-size:17px;
-  font-weight:600;
+
+/* Основной текст */
+
+h2{
+  line-height:1.5;
+  margin-top:10px;
 }
 
-/* КНОПКИ */
-.buttons{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  flex-wrap:wrap;
-  margin-bottom:32px;
+p{
+  line-height:1.6;
 }
 
-.buttons a{
-  min-width:180px;
-  padding:13px 22px;
-  border-radius:9px;
 
+/* Кнопки */
+
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:14px 24px;
+  border-radius:8px;
   text-decoration:none;
-  font-size:17px;
-  font-weight:700;
-  color:white;
-
-  transition:.2s;
-}
-
-.buttons a:hover{
-  transform:translateY(-2px);
-  opacity:.9;
+  font-weight:bold;
 }
 
 .call{
   background:#d61f26;
+  color:#fff;
 }
 
 .wa{
-  background:#08224d;
-  border:1px solid white;
+  background:#fff;
+  color:#0b2d63;
 }
 
-.gis{
-  background:#08bd5a;
+.map{
+  background:#00b14f;
+  color:#fff;
 }
 
-/* ИНФОРМАЦИОННЫЙ БЛОК */
-.info{
-  max-width:1000px;
-  margin:0 auto 28px;
 
-  background:#061f48;
-  border-radius:12px;
-  padding:22px 32px;
+/* Информационная карточка */
 
+.card{
+  background:#111;
+  color:#fff;
+  max-width:900px;
+  margin:40px auto;
+  padding:28px;
+  border-radius:14px;
   text-align:left;
-  border:1px solid rgba(255,255,255,.12);
 }
 
-.info h2{
-  margin:0 0 12px;
-  font-size:24px;
+.card h3{
+  margin-top:0;
 }
 
-.info ul{
-  margin:0 0 18px;
-  padding-left:28px;
+.card p,
+.card li{
+  font-size:14px;
 }
 
-.info li{
-  margin:6px 0;
-  font-size:16px;
-}
 
-.info li::marker{
-  color:#ff2630;
-}
+/* SEO текст */
 
-.brands{
-  border-top:1px solid #1c75bd;
-  padding-top:15px;
-}
-
-.brands h3{
-  margin:0 0 8px;
-  font-size:19px;
-}
-
-.brands p{
-  margin:0;
-  font-size:15px;
-  line-height:1.65;
-}
-
-/* СОЦСЕТИ */
-.social{
-  max-width:1100px;
-  margin:auto;
-  padding:0 20px 25px;
+.seo-text{
+  max-width:1000px;
+  margin:15px auto 0;
+  padding:10px 20px 18px;
   text-align:center;
+  color:#9eabc1;
+  font-size:9px;
+  line-height:1.5;
+  opacity:.85;
 }
 
-.social h2{
-  font-size:23px;
-  margin:10px 0 15px;
+.seo-text p{
+  margin:3px 0;
+}
+
+
+/* Социальные сети */
+
+.socials{
+  text-align:center;
+  padding:45px 20px;
+  background:#071f45;
+}
+
+.socials h2{
+  margin:0 0 25px;
+  font-size:28px;
 }
 
 .social-links{
   display:flex;
   justify-content:center;
-  gap:12px;
+  flex-wrap:wrap;
+  gap:15px;
 }
 
 .social-links a{
-  width:52px;
-  height:52px;
-
+  width:58px;
+  height:58px;
   border-radius:50%;
-
   display:flex;
-  justify-content:center;
   align-items:center;
-
-  color:white;
+  justify-content:center;
   text-decoration:none;
-
-  font-size:20px;
+  font-size:24px;
   font-weight:700;
+  color:#fff;
+  transition:.25s;
+  box-shadow:0 4px 10px rgba(0,0,0,.25);
 }
 
-.pinterest{background:#e60023;}
-.linkedin{background:#0a66c2;}
+.social-links a:hover{
+  transform:translateY(-5px) scale(1.08);
+  opacity:.9;
+}
+
+.pinterest{
+  background:#bd081c;
+}
+
+.linkedin{
+  background:#0a66c2;
+}
+
 .instagram{
-  background:linear-gradient(45deg,#feda75,#d62976,#4f5bd5);
-}
-.x{background:#000;}
-.facebook{background:#1877f2;}
-.youtube{background:#ff0000;}
-
-/* SEO */
-.seo-text{
-  border-top:1px solid rgba(255,255,255,.3);
-  padding:15px 20px 0;
-
-  max-width:1100px;
-  margin:auto;
-
-  text-align:center;
-
-  font-size:9px;
-  line-height:1.7;
-
-  color:#9eabc1;
-  opacity:.85;
+  background:#e1306c;
 }
 
-/* FOOTER */
+.x{
+  background:#000;
+}
+
+.facebook{
+  background:#1877f2;
+}
+
+.youtube{
+  background:#ff0000;
+}
+
+
+/* Нижняя часть */
+
 footer{
+  background:#08224d;
+  padding:20px;
   text-align:center;
-  padding:28px 20px 35px;
-  font-size:13px;
-  color:#c1ccdc;
 }
 
-/* МОБИЛЬНЫЕ */
-@media(max-width:800px){
+
+/* Телефон */
+
+@media(max-width:700px){
 
   .top{
-    white-space:normal;
-    flex-wrap:wrap;
-    gap:7px 15px;
-    padding:12px 10px;
-    font-size:13px;
+    font-size:16px;
+    line-height:1.7;
   }
 
-  .hero{
-    padding:40px 15px 0;
+  .container{
+    padding:40px 15px;
   }
 
   h1{
-    font-size:38px;
-  }
-
-  .subtitle{
-    font-size:21px;
-    margin-bottom:145px;
-  }
-
-  .skyline{
-    height:190px;
+    font-size:40px;
+    margin-bottom:30px;
   }
 
   .equipment{
+    flex-direction:row;
+    justify-content:center;
     gap:10px;
   }
 
@@ -389,249 +278,319 @@ footer{
     flex:0 0 125px;
   }
 
-  .equipment-item img{
-    width:125px;
-    height:125px;
-  }
-
-  .services{
-    font-size:17px;
-    line-height:1.55;
-  }
-
-  .certificate{
-    font-size:14px;
-  }
-
-  .info{
-    padding:18px;
-  }
-
-  .info h2{
-    font-size:21px;
-  }
-
-  .brands p{
-    font-size:14px;
-  }
-
-  .social-links a{
-    width:45px;
-    height:45px;
-    font-size:17px;
+  h2{
+    font-size:22px;
   }
 
   .seo-text{
     font-size:8px;
+    line-height:1.45;
   }
+
 }
+
 </style>
+
 </head>
 
 <body>
 
-<!-- ВЕРХ -->
+
+<!-- КОНТАКТЫ -->
+
 <div class="top">
-  <span>📍 Астана, ул. Куйши Дина, 30/1</span>
-  <a href="tel:+77073353693">☎ +7 707 335 36 93</a>
-  <a href="tel:+77018239386">☎ +7 701 823 93 86</a>
-  <a href="mailto:diasgeolevel@gmail.com">✉ diasgeolevel@gmail.com</a>
+
+📍 Астана, ул. Куйши Дина, 30/1<br>
+
+☎ <a href="tel:+77073353693">
++7 707 335 36 93
+</a><br>
+
+☎ <a href="tel:+77018239386">
++7 701 823 93 86
+</a><br>
+
+✉ <a href="mailto:diasgeolevel@gmail.com">
+diasgeolevel@gmail.com
+</a>
+
 </div>
 
-<!-- ГЛАВНЫЙ БЛОК -->
-<section class="hero">
 
-  <div class="sky"></div>
-  <div class="skyline"></div>
+<!-- ОСНОВНАЯ ЧАСТЬ -->
 
-  <div class="hero-content">
+<div class="container">
 
-    <h1>DIAS GEO LEVEL</h1>
 
-    <div class="subtitle">
-      Ремонт и поверка нивелиров в Астане
-    </div>
+<h1>DIAS GEO LEVEL</h1>
 
-    <div class="equipment">
 
-      <div class="equipment-item">
-        <img
-          src="images/Trimble_AL28A_2.jpg"
-          alt="Ремонт нивелира Trimble в Астане">
-        <div>Trimble</div>
-      </div>
+<!-- ФОТОГРАФИИ -->
 
-      <div class="equipment-item">
-        <img
-          src="images/Leica_NA720_2.jpg"
-          alt="Ремонт нивелира Leica в Астане">
-        <div>Leica</div>
-      </div>
+<div class="equipment">
 
-      <div class="equipment-item">
-        <img
-          src="images/BOSCH_GOL_32D_2.jpg"
-          alt="Ремонт нивелира BOSCH в Астане">
-        <div>BOSCH</div>
-      </div>
 
-    </div>
+  <div class="equipment-item">
 
-    <div class="services">
-      Поверка нивелиров в Астане •
-      Калибровка нивелиров в Астане •
-      Юстировка нивелиров в Астане •
-      Настройка нивелиров в Астане •
-      Ремонт нивелиров в Астане
-    </div>
+    <img
+      src="images/Trimble_AL28A_2.jpg"
+      alt="Ремонт нивелира Trimble в Астане">
 
-    <div class="certificate">
-      Сертификат о метрологической поверке нивелира на 1 год
-    </div>
-
-    <div class="buttons">
-
-      <a class="call" href="tel:+77073353693">
-        ☎ &nbsp; Позвонить
-      </a>
-
-      <a class="wa"
-         href="https://wa.me/77018239386"
-         target="_blank">
-        ◉ &nbsp; WhatsApp
-      </a>
-
-      <a class="gis"
-         href="https://2gis.kz/"
-         target="_blank">
-        📍 &nbsp; 2ГИС
-      </a>
-
-    </div>
-
-    <!-- ИНФОРМАЦИЯ -->
-    <div class="info">
-
-      <h2>Почему выбирают нас</h2>
-
-      <ul>
-        <li>Гарантия на ремонт</li>
-        <li>Бесплатная первичная диагностика нивелира.</li>
-        <li>В наличии запасные части на нивелиры</li>
-        <li>Работаем с утра до вечера, без выходных</li>
-      </ul>
-
-      <div class="brands">
-
-        <h3>
-          Обслуживаем нивелиры всех известных производителей в Астане:
-        </h3>
-
-        <p>
-          Leica NA320 • Leica NA324 • Leica NA332 •
-          Leica NA520 • Leica NA524 • Leica NA532 •
-          Leica NA720 • Leica NA724 • Leica NA728 •
-          Leica NA730 • Leica NA730 Plus •
-          Topcon AT-B4A • Topcon AT-B3A • Topcon AT-B2 •
-          Trimble Spectra Precision AL20M •
-          Trimble Spectra Precision AL24M •
-          Trimble Spectra Precision AL28M •
-          Trimble Spectra Precision AL28A •
-          Trimble Spectra Precision AL32A •
-          Sokkia • Nikon • Bosch • CONDTROL • SETL •
-          CROWN • SOUTH • Геокурс • УОМЗ • RGK •
-          Зубр и другие.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- СОЦСЕТИ -->
-<section class="social">
-
-  <h2>Мы в социальных сетях</h2>
-
-  <div class="social-links">
-
-    <a class="pinterest"
-       href="https://pinterest.com/diasgeolevel"
-       target="_blank">P</a>
-
-    <a class="linkedin"
-       href="https://linkedin.com/in/diasgeolevel"
-       target="_blank">in</a>
-
-    <a class="instagram"
-       href="https://instagram.com/diasgeolevel"
-       target="_blank">◎</a>
-
-    <a class="x"
-       href="https://x.com/diasgeolevel"
-       target="_blank">X</a>
-
-    <a class="facebook"
-       href="https://facebook.com/diasgeolevel"
-       target="_blank">f</a>
-
-    <a class="youtube"
-       href="https://youtube.com/@diasgeolevel"
-       target="_blank">▶</a>
+    <h3>Trimble</h3>
 
   </div>
 
-</section>
 
-<!-- SEO -->
-<div class="seo-text">
+  <div class="equipment-item">
 
-  #ремонтнивелировастана •
-  #поверканивелировастана •
-  #юстировканивелировастана •
-  #калибровканивелировастана
+    <img
+      src="images/Leica_NA720_2.jpg"
+      alt="Ремонт нивелира Leica в Астане">
 
-  <br>
+    <h3>Leica</h3>
 
-  ремонт нивелиров в Астане •
-  поверка нивелиров в Астане •
-  калибровка нивелиров в Астане •
-  юстировка нивелиров в Астане •
-  настройка нивелиров в Астане •
-  обслуживание нивелиров в Астане
+  </div>
 
-  <br>
 
-  ремонт лазерных нивелиров в Астане •
-  калибровка лазерных нивелиров в Астане •
-  юстировка лазерных нивелиров в Астане •
-  настройка лазерных нивелиров в Астане •
-  ремонт лазерного уровня в Астане •
-  калибровка лазерного уровня в Астане
+  <div class="equipment-item">
 
-  <br>
+    <img
+      src="images/BOSCH_GOL_32D_2.jpg"
+      alt="Ремонт нивелира BOSCH в Астане">
 
-  ремонт Leica в Астане •
-  ремонт Trimble в Астане •
-  ремонт Sokkia в Астане •
-  ремонт Topcon в Астане •
-  ремонт Bosch в Астане •
-  ремонт Nikon в Астане
+    <h3>BOSCH</h3>
 
-  <br>
+  </div>
 
-  оптические нивелиры в Астане •
-  лазерные нивелиры в Астане •
-  геодезическое оборудование в Астане •
-  метрологическая поверка нивелиров в Астане
 
 </div>
+
+
+<!-- УСЛУГИ -->
+
+<h2>
+Поверка нивелиров в Астане •
+Калибровка нивелиров в Астане •
+Юстировка нивелиров в Астане •
+Настройка нивелиров в Астане •
+Ремонт нивелиров в Астане
+</h2>
+
+
+<p>
+<b>Сертификат о метрологической поверке нивелира на 1 год</b>
+</p>
+
+
+<!-- КНОПКИ -->
+
+<a
+  class="btn call"
+  href="tel:+77073353693">
+📞 Позвонить
+</a>
+
+
+<a
+  class="btn wa"
+  href="https://wa.me/77073353693"
+  target="_blank"
+  rel="noopener">
+WhatsApp
+</a>
+
+
+<a
+  class="btn map"
+  href="https://2gis.kz/astana/firm/70000001111395267"
+  target="_blank"
+  rel="noopener">
+📍 2ГИС
+</a>
+
+
+<!-- ИНФОРМАЦИЯ -->
+
+<div class="card">
+
+<h3>Почему выбирают нас</h3>
+
+<ul>
+
+<li>Гарантия на ремонт</li>
+
+<li>
+Бесплатная первичная диагностика нивелира.
+</li>
+
+<li>
+В наличии запасные части на нивелиры
+</li>
+
+<li>
+Работаем с утра до вечера, без выходных
+</li>
+
+</ul>
+
+
+<h3>
+Обслуживаем нивелиры всех известных производителей в Астане:
+</h3>
+
+
+<p>
+
+Leica NA320 • Leica NA324 • Leica NA332 •
+Leica NA520 • Leica NA524 • Leica NA532 •
+Leica NA720 • Leica NA724 • Leica NA728 •
+Leica NA730 • Leica NA730 Plus •
+Topcon AT-B4A • Topcon AT-B3A • Topcon AT-B2 •
+Trimble Spectra Precision AL20M •
+Trimble Spectra Precision AL24M •
+Trimble Spectra Precision AL28M •
+Trimble Spectra Precision AL28A •
+Trimble Spectra Precision AL32A •
+Sokkia • Nikon • Bosch •
+CONDTROL • SETL • CROWN •
+SOUTH • Геокурс • УОМЗ • RGK • Зубр и другие.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- СОЦИАЛЬНЫЕ СЕТИ -->
+
+<section class="socials">
+
+<h2>Мы в социальных сетях</h2>
+
+
+<div class="social-links">
+
+
+<a
+  href="https://pinterest.com/diasgeolevel"
+  target="_blank"
+  rel="noopener"
+  class="pinterest"
+  aria-label="Pinterest">
+📌
+</a>
+
+
+<a
+  href="https://linkedin.com/in/diasgeolevel"
+  target="_blank"
+  rel="noopener"
+  class="linkedin"
+  aria-label="LinkedIn">
+in
+</a>
+
+
+<a
+  href="https://instagram.com/diasgeolevel"
+  target="_blank"
+  rel="noopener"
+  class="instagram"
+  aria-label="Instagram">
+📷
+</a>
+
+
+<a
+  href="https://x.com/diasgeolevel"
+  target="_blank"
+  rel="noopener"
+  class="x"
+  aria-label="X">
+𝕏
+</a>
+
+
+<a
+  href="https://facebook.com/diasgeolevel"
+  target="_blank"
+  rel="noopener"
+  class="facebook"
+  aria-label="Facebook">
+f
+</a>
+
+
+<a
+  href="https://youtube.com/@diasgeolevel"
+  target="_blank"
+  rel="noopener"
+  class="youtube"
+  aria-label="YouTube">
+▶
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- SEO БЛОК -->
+
+<section class="seo-text">
+
+<p>
+#ремонтнивелировастана •
+#поверканивелировастана •
+#юстировканивелировастана •
+#калибровканивелировастана
+</p>
+
+<p>
+ремонт нивелиров в Астане •
+поверка нивелиров в Астане •
+калибровка нивелиров в Астане •
+юстировка нивелиров в Астане •
+настройка нивелиров в Астане •
+обслуживание нивелиров в Астане
+</p>
+
+<p>
+ремонт лазерных нивелиров в Астане •
+калибровка лазерных нивелиров в Астане •
+юстировка лазерных нивелиров в Астане •
+настройка лазерных нивелиров в Астане •
+ремонт лазерного уровня в Астане •
+калибровка лазерного уровня в Астане
+</p>
+
+<p>
+ремонт Leica в Астане •
+ремонт Trimble в Астане •
+ремонт Sokkia в Астане •
+ремонт Topcon в Астане •
+ремонт Bosch в Астане •
+ремонт Nikon в Астане
+</p>
+
+<p>
+оптические нивелиры в Астане •
+лазерные нивелиры в Астане •
+геодезическое оборудование в Астане •
+метрологическая поверка нивелиров в Астане
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
-  © DIAS GEO LEVEL
+© DIAS GEO LEVEL
 </footer>
+
 
 </body>
 </html>
