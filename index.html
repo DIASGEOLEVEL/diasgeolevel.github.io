@@ -5,17 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="google-site-verification" content="zBjlTzDmIj3tzANpU91ex0G-7R6jdE8uL72IKTba7bw">
 
-  <title>ЦЕНТР РЕМОНТА НИВЕЛИРОВ</title>
-  <meta name="description" content="Ремонт, поверка, калибровка и юстировка оптических и лазерных нивелиров в Астане. Принимаем б/у и сломанные нивелиры. В наличии штативы, рейки и запчасти.">
+  <title>Ремонт и поверка нивелиров в Астане | DIAS GEO LEVEL</title>
+  <meta name="description" content="Ремонт, поверка, калибровка и юстировка оптических и лазерных нивелиров в Астане. Принимаем б/у и сломанные приборы. В наличии штативы, рейки и запчасти.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://diasgeolevel.kz/">
+  <meta property="og:title" content="Ремонт и поверка нивелиров в Астане | DIAS GEO LEVEL">
+  <meta property="og:description" content="Качественный ремонт, калибровка и поверка оптических и лазерных нивелиров. Гарантия, бесплатная диагностика.">
+  <meta property="og:image" content="images/Leica_NA720_2.jpg">
 
   <link rel="icon" type="image/png" href="/favicon.png?v=2">
 
-  <!-- Микроразметка Schema.org для локального бизнеса -->
+  <!-- Микроразметка Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "DIAS GEO LEVEL",
+    "image": "images/Leica_NA720_2.jpg",
     "description": "Ремонт, поверка, калибровка и юстировка оптических и лазерных нивелиров в Астане.",
     "telephone": ["+77073353693", "+77018239386"],
     "email": "diasgeolevel@gmail.com",
@@ -41,9 +49,9 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
       background: #0b2d63;
-      color: #fff;
+      color: #ffffff;
       line-height: 1.5;
     }
 
@@ -51,23 +59,26 @@
     .top {
       background: #08224d;
       padding: 12px 15px;
+      padding-left: max(15px, env(safe-area-inset-left));
+      padding-right: max(15px, env(safe-area-inset-right));
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 15px 25px;
+      gap: 12px 25px;
       font-size: 15px;
       font-weight: 600;
     }
 
     .top span,
     .top a {
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
       white-space: nowrap;
     }
 
-    .top a:hover {
+    .top a:hover,
+    .top a:focus-visible {
       text-decoration: underline;
     }
 
@@ -92,7 +103,7 @@
       justify-content: center;
       align-items: flex-start;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 20px;
       margin: 0 auto 35px;
     }
 
@@ -103,12 +114,12 @@
 
     .equipment-item img {
       display: block;
-      width: 100%;
+      width: 130px;
       height: 120px;
       object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.3);
-      transition: transform .25s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.25s ease;
     }
 
     .equipment-item img:hover {
@@ -131,12 +142,12 @@
 
     .badge {
       display: inline-block;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 10px 18px;
       border-radius: 20px;
-      font-weight: bold;
-      margin-bottom: 25px;
+      font-weight: 700;
+      margin-bottom: 30px;
     }
 
     /* КНОПКИ */
@@ -152,20 +163,25 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 150px;
+      min-width: 160px;
       height: 50px;
       padding: 0 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
-      color: #fff;
-      transition: transform .2s, opacity .2s;
+      color: #ffffff;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      opacity: .9;
+      opacity: 0.92;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 2px;
     }
 
     .call { background: #d61f26; }
@@ -180,8 +196,8 @@
       padding: 28px;
       border-radius: 14px;
       text-align: left;
-      border: 1px solid rgba(255,255,255,.1);
-      box-shadow: 0 4px 12px rgba(0,0,0,.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .parts-card h2 {
@@ -207,22 +223,6 @@
     .parts-list li, .card li {
       margin: 8px 0;
       font-size: 15px;
-    }
-
-    /* SEO ТЕКСТ */
-    .seo-text {
-      max-width: 900px;
-      margin: 20px auto 0;
-      padding: 10px;
-      text-align: center;
-      color: #9eabc1;
-      font-size: 10px;
-      line-height: 1.5;
-      opacity: .8;
-    }
-
-    .seo-text p {
-      margin: 4px 0;
     }
 
     /* СОЦИАЛЬНЫЕ СЕТИ */
@@ -254,9 +254,9 @@
       text-decoration: none;
       font-size: 20px;
       font-weight: 700;
-      color: #fff;
-      transition: transform .25s;
-      box-shadow: 0 4px 10px rgba(0,0,0,.25);
+      color: #ffffff;
+      transition: transform 0.25s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
 
     .social-links a:hover {
@@ -266,7 +266,7 @@
     .pinterest { background: #bd081c; }
     .linkedin { background: #0a66c2; }
     .instagram { background: #e1306c; }
-    .x { background: #000; }
+    .x { background: #000000; }
     .facebook { background: #1877f2; }
     .youtube { background: #ff0000; }
 
@@ -277,6 +277,7 @@
       text-align: center;
       font-size: 14px;
       color: #a0acbf;
+      padding-bottom: max(20px, env(safe-area-inset-bottom));
     }
 
     /* МОБИЛЬНАЯ ВЕРСИЯ */
@@ -325,15 +326,15 @@
     <!-- ФОТОГРАФИИ -->
     <div class="equipment">
       <div class="equipment-item">
-        <img src="images/Trimble_AL28A_2.jpg" alt="Ремонт нивелира Trimble в Астане" loading="lazy">
+        <img src="images/Trimble_AL28A_2.jpg" alt="Ремонт нивелира Trimble в Астане" width="130" height="120" loading="lazy">
         <h3>Trimble</h3>
       </div>
       <div class="equipment-item">
-        <img src="images/Leica_NA720_2.jpg" alt="Ремонт нивелира Leica в Астане" loading="lazy">
+        <img src="images/Leica_NA720_2.jpg" alt="Ремонт нивелира Leica в Астане" width="130" height="120" loading="lazy">
         <h3>Leica</h3>
       </div>
       <div class="equipment-item">
-        <img src="images/BOSCH_GOL_32D_2.jpg" alt="Ремонт нивелира BOSCH в Астане" loading="lazy">
+        <img src="images/BOSCH_GOL_32D_2.jpg" alt="Ремонт нивелира BOSCH в Астане" width="130" height="120" loading="lazy">
         <h3>BOSCH</h3>
       </div>
     </div>
@@ -410,16 +411,6 @@
       <a href="https://facebook.com/diasgeolevel" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">f</a>
       <a href="https://youtube.com/@diasgeolevel" target="_blank" rel="noopener" class="youtube" aria-label="YouTube">▶</a>
     </div>
-  </section>
-
-  <!-- SEO -->
-  <section class="seo-text">
-    <p>#ремонтнивелировастана • #поверканивелировастана • #юстировканивелировастана • #калибровканивелировастана</p>
-    <p>ремонт нивелиров в Астане • поверка нивелиров в Астане • калибровка нивелиров в Астане • юстировка нивелиров в Астане • настройка нивелиров в Астане • обслуживание нивелиров в Астане</p>
-    <p>ремонт лазерных нивелиров в Астане • калибровка лазерных нивелиров в Астане • юстировка лазерных нивелиров в Астане • настройка лазерных нивелиров в Астане • ремонт лазерного уровня в Астане • калибровка лазерного уровня в Астане</p>
-    <p>ремонт Leica в Астане • ремонт Trimble в Астане • ремонт Sokkia в Астане • ремонт Topcon в Астане • ремонт Bosch в Астане • ремонт Nikon в Астане</p>
-    <p>оптические нивелиры в Астане • лазерные нивелиры в Астане • геодезическое оборудование в Астане • метрологическая поверка нивелиров в Астане</p>
-    <p>купить б/у нивелир в Астане • продать б/у нивелир в Астане • приём нерабочих нивелиров в Астане • сломанные нивелиры на запчасти • штативы для нивелиров в Астане • ножки для нивелира • нивелирные рейки в Астане • линейки для нивелира • закрепительные винты для штативов</p>
   </section>
 
   <!-- FOOTER -->
