@@ -7,17 +7,18 @@
 
   <title>Ремонт и поверка нивелиров в Астане | DIAS GEO LEVEL</title>
   <meta name="description" content="Ремонт, поверка, калибровка и юстировка оптических и лазерных нивелиров в Астане. Принимаем б/у и сломанные приборы. В наличии штативы, рейки и запчасти.">
+  <link rel="canonical" href="https://diasgeolevel.kz/">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://diasgeolevel.kz/">
   <meta property="og:title" content="Ремонт и поверка нивелиров в Астане | DIAS GEO LEVEL">
-  <meta property="og:description" content="Качественный ремонт, калибровка и поверка оптических и лазерных нивелиров. Гарантия, бесплатная диагностика.">
+  <meta property="og:description" content="Качественный ремонт, калибровка и поверка оптических и лазерных нивелиров. Сертификат поверки на 1 год. Бесплатная диагностика.">
   <meta property="og:image" content="images/Leica_NA720_2.jpg">
 
   <link rel="icon" type="image/png" href="/favicon.png?v=2">
 
-  <!-- Микроразметка Schema.org -->
+  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,6 +43,29 @@
   }
   </script>
 
+  <!-- Schema.org FAQPage for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Сколько времени занимает поверка и ремонт нивелира?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Первичная диагностика производится бесплатно. Сроки калибровки и юстировки обычно составляют от нескольких часов до 1 дня."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Выдаете ли вы сертификат о поверке?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да, выдаем официальный сертификат о метрологической поверке нивелира сроком на 1 год."
+      }
+    }]
+  }
+  </script>
+
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -53,6 +77,7 @@
       background: #0b2d63;
       color: #ffffff;
       line-height: 1.5;
+      padding-bottom: 60px; /* Отступ под фиксированную панель на мобильных */
     }
 
     /* ВЕРХНЯЯ ПАНЕЛЬ */
@@ -70,15 +95,13 @@
       font-weight: 600;
     }
 
-    .top span,
-    .top a {
+    .top span, .top a {
       color: #ffffff;
       text-decoration: none;
       white-space: nowrap;
     }
 
-    .top a:hover,
-    .top a:focus-visible {
+    .top a:hover, .top a:focus-visible {
       text-decoration: underline;
     }
 
@@ -90,7 +113,6 @@
       text-align: center;
     }
 
-    /* ЗАГОЛОВОК */
     h1 {
       font-size: clamp(32px, 5vw, 52px);
       margin: 0 0 30px;
@@ -270,6 +292,28 @@
     .facebook { background: #1877f2; }
     .youtube { background: #ff0000; }
 
+    /* Моб. фиксированная панель */
+    .mobile-sticky-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #08224d;
+      padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+      z-index: 1000;
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+    .mobile-sticky-bar a {
+      flex: 1;
+      height: 44px;
+      font-size: 14px;
+      min-width: auto;
+    }
+
     /* FOOTER */
     footer {
       background: #08224d;
@@ -277,7 +321,6 @@
       text-align: center;
       font-size: 14px;
       color: #a0acbf;
-      padding-bottom: max(20px, env(safe-area-inset-bottom));
     }
 
     /* МОБИЛЬНАЯ ВЕРСИЯ */
@@ -304,6 +347,10 @@
       .parts-card, .card {
         padding: 20px 15px;
       }
+
+      .mobile-sticky-bar {
+        display: flex;
+      }
     }
   </style>
 </head>
@@ -326,7 +373,7 @@
     <!-- ФОТОГРАФИИ -->
     <div class="equipment">
       <div class="equipment-item">
-        <img src="images/Trimble_AL28A_2.jpg" alt="Ремонт нивелира Trimble в Астане" width="130" height="120" loading="lazy">
+        <img src="images/Trimble_AL28A_2.jpg" alt="Ремонт нивелира Trimble в Астане" width="130" height="120" fetchpriority="high">
         <h3>Trimble</h3>
       </div>
       <div class="equipment-item">
@@ -412,6 +459,12 @@
       <a href="https://youtube.com/@diasgeolevel" target="_blank" rel="noopener" class="youtube" aria-label="YouTube">▶</a>
     </div>
   </section>
+
+  <!-- Фиксированная панель для мобильных устройств -->
+  <div class="mobile-sticky-bar">
+    <a class="btn call" href="tel:+77073353693">📞 Позвонить</a>
+    <a class="btn wa" href="https://wa.me/77073353693" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 
   <!-- FOOTER -->
   <footer>
