@@ -77,7 +77,7 @@
       background: #0b2d63;
       color: #ffffff;
       line-height: 1.5;
-      padding-bottom: 60px; /* Отступ под фиксированную панель на мобильных */
+      padding-bottom: 70px;
     }
 
     /* ВЕРХНЯЯ ПАНЕЛЬ */
@@ -185,6 +185,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
       min-width: 160px;
       height: 50px;
       padding: 0 20px;
@@ -211,7 +212,7 @@
     .map { background: #087f3d; }
 
     /* КАРТОЧКИ */
-    .card, .parts-card {
+    .card, .parts-card, .faq-card {
       background: #08224d;
       max-width: 900px;
       margin: 0 auto 30px;
@@ -222,7 +223,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .parts-card h2 {
+    .parts-card h2, .faq-card h2 {
       margin-top: 0;
       font-size: 24px;
       text-align: center;
@@ -245,6 +246,27 @@
     .parts-list li, .card li {
       margin: 8px 0;
       font-size: 15px;
+    }
+
+    /* FAQ БЛОК */
+    details {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      padding: 12px 16px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      outline: none;
+    }
+
+    details p {
+      margin: 10px 0 0;
+      font-size: 15px;
+      color: #d1d8e0;
     }
 
     /* СОЦИАЛЬНЫЕ СЕТИ */
@@ -300,8 +322,8 @@
       left: 0;
       right: 0;
       background: #08224d;
-      padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
       z-index: 1000;
       justify-content: space-around;
       gap: 10px;
@@ -309,7 +331,7 @@
 
     .mobile-sticky-bar a {
       flex: 1;
-      height: 44px;
+      height: 46px;
       font-size: 14px;
       min-width: auto;
     }
@@ -344,7 +366,7 @@
         margin: 0;
       }
 
-      .parts-card, .card {
+      .parts-card, .card, .faq-card {
         padding: 20px 15px;
       }
 
@@ -373,15 +395,15 @@
     <!-- ФОТОГРАФИИ -->
     <div class="equipment">
       <div class="equipment-item">
-        <img src="images/Trimble_AL28A_2.jpg" alt="Ремонт нивелира Trimble в Астане" width="130" height="120" fetchpriority="high">
+        <img src="images/Trimble_AL28A_2.jpg" alt="Ремонт и поверка оптических нивелиров Trimble в Астане" width="130" height="120" fetchpriority="high">
         <h3>Trimble</h3>
       </div>
       <div class="equipment-item">
-        <img src="images/Leica_NA720_2.jpg" alt="Ремонт нивелира Leica в Астане" width="130" height="120" loading="lazy">
+        <img src="images/Leica_NA720_2.jpg" alt="Ремонт и калибровка оптических нивелиров Leica в Астане" width="130" height="120" loading="lazy">
         <h3>Leica</h3>
       </div>
       <div class="equipment-item">
-        <img src="images/BOSCH_GOL_32D_2.jpg" alt="Ремонт нивелира BOSCH в Астане" width="130" height="120" loading="lazy">
+        <img src="images/BOSCH_GOL_32D_2.jpg" alt="Обслуживание и ремонт нивелиров BOSCH в Астане" width="130" height="120" loading="lazy">
         <h3>BOSCH</h3>
       </div>
     </div>
@@ -398,8 +420,8 @@
     <!-- КНОПКИ -->
     <div class="actions">
       <a class="btn call" href="tel:+77073353693">📞 Позвонить</a>
-      <a class="btn wa" href="https://wa.me/77073353693" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn map" href="https://2gis.kz/astana/firm/70000001111395267" target="_blank" rel="noopener">📍 2ГИС</a>
+      <a class="btn wa" href="https://wa.me/77073353693" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      <a class="btn map" href="https://2gis.kz/astana/firm/70000001111395267" target="_blank" rel="noopener noreferrer">📍 2ГИС</a>
     </div>
 
     <!-- ПРИНИМАЕМ И В НАЛИЧИИ -->
@@ -445,25 +467,38 @@
       </p>
     </section>
 
+    <!-- ВОПРОСЫ И ОТВЕТЫ (FAQ) -->
+    <section class="faq-card">
+      <h2>Часто задаваемые вопросы</h2>
+      <details>
+        <summary>Сколько времени занимает поверка и ремонт нивелира?</summary>
+        <p>Первичная диагностика производится бесплатно. Сроки калибровки и юстировки обычно составляют от нескольких часов до 1 дня.</p>
+      </details>
+      <details>
+        <summary>Выдаете ли вы сертификат о поверке?</summary>
+        <p>Да, выдаем официальный сертификат о метрологической поверке нивелира сроком на 1 год.</p>
+      </details>
+    </section>
+
   </main>
 
   <!-- СОЦИАЛЬНЫЕ СЕТИ -->
   <section class="socials">
     <h2>Мы в социальных сетях</h2>
     <div class="social-links">
-      <a href="https://pinterest.com/diasgeolevel" target="_blank" rel="noopener" class="pinterest" aria-label="Pinterest">📌</a>
-      <a href="https://linkedin.com/in/diasgeolevel" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn">in</a>
-      <a href="https://instagram.com/diasgeolevel" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">📷</a>
-      <a href="https://x.com/diasgeolevel" target="_blank" rel="noopener" class="x" aria-label="X">𝕏</a>
-      <a href="https://facebook.com/diasgeolevel" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">f</a>
-      <a href="https://youtube.com/@diasgeolevel" target="_blank" rel="noopener" class="youtube" aria-label="YouTube">▶</a>
+      <a href="https://pinterest.com/diasgeolevel" target="_blank" rel="noopener noreferrer" class="pinterest" aria-label="Pinterest">📌</a>
+      <a href="https://linkedin.com/in/diasgeolevel" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn">in</a>
+      <a href="https://instagram.com/diasgeolevel" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">📷</a>
+      <a href="https://x.com/diasgeolevel" target="_blank" rel="noopener noreferrer" class="x" aria-label="X">𝕏</a>
+      <a href="https://facebook.com/diasgeolevel" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">f</a>
+      <a href="https://youtube.com/@diasgeolevel" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube">▶</a>
     </div>
   </section>
 
   <!-- Фиксированная панель для мобильных устройств -->
   <div class="mobile-sticky-bar">
     <a class="btn call" href="tel:+77073353693">📞 Позвонить</a>
-    <a class="btn wa" href="https://wa.me/77073353693" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn wa" href="https://wa.me/77073353693" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
   </div>
 
   <!-- FOOTER -->
